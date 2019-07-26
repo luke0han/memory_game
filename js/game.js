@@ -5,8 +5,7 @@ let counter;
 let good;
 let compTurn;
 let intervalId;
-/*let strict = false;*/
-let noise = true;
+let sound = true;
 let on = false;
 let win;
 
@@ -32,7 +31,7 @@ strictButton.addEventListener('click', (event) => {
 onButton.addEventListener('click', (event) => {
   if (onButton.checked == true) {
     on = true;
-    turnCounter.innerHTML = "0";
+    turnCounter.innerHTML = "Press Start";
   } else {
     on = false;
     turnCounter.innerHTML = "";
@@ -89,38 +88,38 @@ function gameTurn() {
 }
 
 function one() {
-  if (noise) {
-    let audio = document.getElementById("clip2");
+  if (sound) {
+    let audio = document.getElementById("audio1");
     audio.play();
   }
-  noise = true;
+  sound = true;
   c.style.backgroundColor = "#f2a257";
 }
 
 function two() {
-  if (noise) {
-    let audio = document.getElementById("clip2");
+  if (sound) {
+    let audio = document.getElementById("audio1");
     audio.play();
   }
-  noise = true;
+  sound = true;
   o.style.backgroundColor = "#f2a257";
 }
 
 function three() {
-  if (noise) {
-    let audio = document.getElementById("clip2");
+  if (sound) {
+    let audio = document.getElementById("audio1");
     audio.play();
   }
-  noise = true;
+  sound = true;
   d.style.backgroundColor = "#f2a257";
 }
 
 function four() {
-  if (noise) {
-    let audio = document.getElementById("clip2");
+  if (sound) {
+    let audio = document.getElementById("audio1");
     audio.play();
   }
-  noise = true;
+  sound = true;
   e.style.backgroundColor = "#f2a257";
 }
 
@@ -201,7 +200,8 @@ function check() {
   if (good == false) {
     flashColor();
     turnCounter.innerHTML = "Wrong!";
- 
+    var audio = new Audio('audio/audio2.mp3');
+    audio.play();
     setTimeout(() => {
       turnCounter.innerHTML = counter;
       clearColor();
@@ -217,7 +217,7 @@ function check() {
       }
     }, 700);
 
-    noise = false;
+    sound = false;
   }
 
   if (counter == userLights.length && good && !win) {
