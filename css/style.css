@@ -1,0 +1,136 @@
+body {
+    background-image: url(https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&h=1280&w=1280);
+    background-size: cover;
+}
+
+
+
+
+.outer-circle {
+    text-align: center;
+    margin-top: 5%;
+
+}
+
+.box {
+    display: inline-block;
+    color: #fff;
+    font-size: 8vh;
+    font-weight: 800;
+}
+
+h3 {
+    color: #fff;
+    font-size: 5vh;
+    line-height: 50px;
+    padding-right: 10px;
+    margin:10%;
+}
+
+#name-rules {
+    background-color: #fff;
+    text-align: center;
+}
+
+#name-rules h1 {
+    font-size: 9vh;
+    color: #ff6200;
+}
+
+#name-rules p {
+    font-size: 3vh;
+    color: #d4d4d4;
+}
+
+/***********************************/
+
+#c {
+
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    text-align: center;
+    background: #ff6200;
+    border-style: solid;
+    border-width: 5px;
+}
+
+#o {
+
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    text-align: center;
+    background: #ff6200;
+
+    border-style: solid;
+    border-width: 5px;
+
+}
+
+#d {
+
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    text-align: center;
+    background: #ff6200;
+    border-style: solid;
+    border-width: 5px;
+
+}
+
+#e {
+
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    text-align: center;
+    background: #ff6200;
+    border-style: solid;
+    border-width: 5px;
+}
+
+
+
+
+.toggle {
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.button {
+    margin: auto;
+    border-radius: 10px;
+    font-size: 2em;
+    background-color: #ff6200;
+     text-align: center;
+}
+
+#power {
+
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    font-size: 15px;
+    margin:auto;
+     text-align: center;
+}
+
+/*#f2a257*/
+
+#counter {
+    background: #000;
+    color: #3efc30;
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    border: 4px solid grey;
+    border-radius: 5px;
+    height: 100px;
+    width: 150px;
+    margin: auto;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 10%;
+    padding-top: 3%;
+}
